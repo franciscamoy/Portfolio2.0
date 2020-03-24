@@ -22,10 +22,16 @@ p {
   font-size: 12pt;
 }
 
-/* Base Typography*/
-a {
+li {
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: medium;
+  font-weight: 400;
+  font-size: 10pt;
+}
+
+/* Base Typography*/
+.portfolio_galeria {
+  padding-top: 10rem;
+  align-items: center;
 }
 
 .grid {
@@ -231,11 +237,11 @@ a {
   }
 }
 .portfolio_personal {
-  height: 30vh;
-  background-image: url("../img/fondo_personal.jpg");
+  background-image: url(../img/fondo_personal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #cfcfcf;
+  background-position: center;
+  padding-top: 80px;
 }
 .portfolio_personal img {
   height: 20vh;
@@ -243,7 +249,7 @@ a {
 }
 
 .portfolio_contacto {
-  height: 300px;
+  height: 20vh;
   color: #ffffff;
   background-color: #000000;
 }
