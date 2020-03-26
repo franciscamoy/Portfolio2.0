@@ -4,10 +4,23 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 50vh;
+    padding-top: 5vh;
+    text-align: center;
+}
 
-    img {
-        height: 20vh;
-        align-items: center;
-    }
+.portfolio_personal_foto {
+    height: 35vh;
+    background-image: url(../img/personal.jpg);
+    background-repeat: no-repeat;
+}
+
+.portfolio_personal_texto {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    align-items: center;
+}
+
+.portfolio_personal_toolkit {
+    text-align: left;
+    padding-bottom: 5vh;
 }

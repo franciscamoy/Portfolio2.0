@@ -1,39 +1,34 @@
 h1 {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 800;
-  font-size: 24pt;
+  font-size: 26pt;
 }
 
 h2 {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 800;
-  font-size: 18pt;
+  font-size: 22pt;
 }
 
 h3 {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 800;
-  font-size: 16pt;
+  font-size: 20pt;
 }
 
 p {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
-  font-size: 12pt;
+  font-size: 14pt;
 }
 
 li {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
-  font-size: 10pt;
+  font-size: 14pt;
 }
 
 /* Base Typography*/
-.portfolio_galeria {
-  padding-top: 10rem;
-  align-items: center;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -241,17 +236,164 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 80px;
+  padding-top: 5vh;
+  text-align: center;
 }
-.portfolio_personal img {
-  height: 20vh;
+
+.portfolio_personal_foto {
+  height: 35vh;
+  background-image: url(../img/personal.jpg);
+  background-repeat: no-repeat;
+}
+
+.portfolio_personal_texto {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   align-items: center;
+}
+
+.portfolio_personal_toolkit {
+  text-align: left;
+  padding-bottom: 5vh;
 }
 
 .portfolio_contacto {
   height: 20vh;
   color: #ffffff;
   background-color: #000000;
+}
+
+.portfolio_galeria {
+  padding-top: 5vh;
+}
+
+.box15 {
+  position: relative;
+}
+
+.box15 img {
+  width: 100%;
+  height: auto;
+}
+
+.box15 .box-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.box15:hover .box-content {
+  background-color: rgba(255, 242, 242, 0.8);
+}
+
+.box15 .box-content:after, .box15 .box-content:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.6s ease 0.3s;
+}
+
+.box15 .box-content:before {
+  border-left: 1px solid #040404;
+  border-top: 1px solid #040404;
+  top: 19px;
+  left: 19px;
+}
+
+.box15 .box-content:after {
+  border-bottom: 1px solid #040404;
+  border-right: 1px solid #040404;
+  bottom: 19px;
+  right: 19px;
+}
+
+.box15:hover .box-content:after, .box15:hover .box-content:before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.box15 .title {
+  font-size: 22px;
+  color: #000;
+  margin: 0;
+  position: relative;
+  top: 0;
+  opacity: 0;
+  transition: all 1s ease 10ms;
+}
+
+.box15:hover .title {
+  top: 39%;
+  opacity: 1;
+  transition: all 0.5s cubic-bezier(1, -0.53, 0.405, 1.425) 10ms;
+}
+
+.box15 .title:after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: #040404;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: all 1s ease 0s;
+}
+
+.box15:hover .title:after {
+  width: 80%;
+  transition: all 1s ease 0.8s;
+}
+
+.box15 .icon {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(1, -0.53, 0.405, 1.425);
+  transition-delay: 0.1s;
+}
+
+.box15:hover .icon {
+  bottom: 39%;
+  opacity: 1;
+}
+
+.box15 .icon li {
+  display: inline-block;
+}
+
+.box15 .icon li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #000;
+  border: 1px solid #000;
+  margin-right: 5px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.box15 .icon li a:hover {
+  background: #000;
+  color: #fff;
+}
+
+@media only screen and (max-width: 990px) {
+  .box15 {
+    margin-bottom: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
