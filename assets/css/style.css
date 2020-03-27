@@ -232,29 +232,26 @@ li {
   }
 }
 .portfolio_personal {
+  height: 40vh;
+  padding-top: 5vh;
   background-image: url(../img/fondo_personal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 5vh;
-  text-align: center;
-}
-
-.portfolio_personal_foto {
-  height: 35vh;
-  background-image: url(../img/personal.jpg);
-  background-repeat: no-repeat;
+  text-align: left;
+  color: #ffffff;
 }
 
 .portfolio_personal_texto {
   padding-top: 10vh;
   padding-bottom: 10vh;
-  align-items: center;
+  align-items: left;
 }
 
 .portfolio_personal_toolkit {
   text-align: left;
   padding-bottom: 5vh;
+  color: #ffffff;
 }
 
 .portfolio_contacto {
@@ -341,7 +338,7 @@ li {
   background: #040404;
   position: absolute;
   bottom: -8px;
-  left: 0;
+  left: 8px;
   right: 0;
   margin: 0 auto;
   transition: all 1s ease 0s;
