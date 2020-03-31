@@ -1,4 +1,11 @@
 
+body {
+    margin: 0;
+}
+
+.navbar {
+    padding: 0;
+}
 
 .nav-item {
     color: #ffffff;
@@ -8,3 +15,11 @@
     color: #ffffff;
     text-decoration: none;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*.navbar {
+    width: 100vw;
+}*/

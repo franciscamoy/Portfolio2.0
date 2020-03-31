@@ -10,9 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 <!--galeria fotos -->
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
 <!--mi estilo -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
@@ -26,24 +24,23 @@
 
 <!-- MI PRESENTACION -->
 
-    <nav class="container portfolio_menu navbar-fixed">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="container portfolio_menu">
+      <nav class="navbar navbar-expand-lg navbar-dark pl-0 pr-0">
         <a class="portfolio_menu_logo"><h1>Fran</h1></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto nav__button portfolio_menu_buttons ">
-            <li class="nav-item"><a class="nav-link" href="#"><p>Proyectos</p></a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><p>Contacto</p></a></li>
+          <div class="navbar-nav ml-auto nav__button portfolio_menu_buttons">
+            <li class="nav-item"><a class="nav-link" onclick="scroll()" href="#portfolio_galeria"><p>Proyectos</p></a></li>
+            <li class="nav-item"><a class="nav-link" onclick="scroll()" href="#portfolio_contacto"><p>Contacto</p></a></li>
           </div>
         </div>
       </nav>
     </nav>
 
 <!-- MI PRESENTACION -->
-
 
     <div class="container">
       <div class="row">
@@ -65,138 +62,77 @@
     </div>
   </div>
 
-
-
 <!-- galeria de fotos -->
 
+<h1 class="container text-left portfolio_galeria_titulo" id="portfolio_galeria_titulo">Mis Proyectos</h1>
+<div id="gallery">
   <section>
-    <div class="container gal-container portfolio_galeria">
-      <h1 class="text-left portfolio_galeria_titulo">Mis Proyectos</h1>
-
-      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-        <div class="box">
-          <a href="#" data-toggle="modal" data-target="#3">
-            <img src="assets/img/proyecto1.PNG">
-          </a>
-          <div class="modal fade" id="3" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                <div class="modal-body">
-                  <img src="assets/img/proyecto1.PNG">
-                </div>
-                  <div class="col-md-12 description">
-                    <h4>This is the third one on my Gallery</h4>
+      <div class="container">
+          <div class="row">
+          <!--</div>-->
+          <!--<div class="row">-->
+              <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                  <div class="box">                            
+                      <a  title="cascada" class="link-gallery">
+                          <img class="img-gallery" src="assets/img/proyecto1.PNG">
+                      </a>
                   </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-        <div class="box">
-          <a href="#" data-toggle="modal" data-target="#4">
-            <img src="assets/img/proyecto2.PNG">
-          </a>
-          <div class="modal fade" id="4" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                <div class="modal-body">
-                  <img src="assets/img/proyecto2.PNG">
-                </div>
-                  <div class="col-md-12 description">
-                    <h4>This is the fourth one on my Gallery</h4>
+              <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                  <div class="box">                                                        
+                      <a title="rocas" class="link-gallery">
+                          <img class="img-gallery" src="assets/img/proyecto2.PNG">
+                      </a>
                   </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-        <div class="box">
-          <a href="#" data-toggle="modal" data-target="#5">
-            <img src="assets/img/proyecto3.PNG">
-          </a>
-          <div class="modal fade" id="5" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                <div class="modal-body">
-                  <img src="assets/img/proyecto3.PNG">
-                </div>
-                  <div class="col-md-12 description">
-                    <h4>This is the fifth one on my Gallery</h4>
+              <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                  <div class="box">                            
+                      <a title="rocas" class="link-gallery">
+                          <img class="img-gallery" src="assets/img/proyecto3.PNG">
+                      </a>
                   </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-        <div class="box">
-          <a href="#" data-toggle="modal" data-target="#6">
-            <img src="assets/img/proyecto4.PNG">
-          </a>
-          <div class="modal fade" id="6" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                <div class="modal-body">
-                  <img src="assets/img/proyecto4.PNG">
-                </div>
-                  <div class="col-md-12 description">
-                    <h4>This is the sixth one on my Gallery</h4>
-                  </div>
+          <!--</div>-->
+          <!--<div class="row">-->
+            <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+              <div class="box">                            
+                  <a  title="cascada" class="link-gallery">
+                      <img class="img-gallery" src="assets/img/proyecto4.PNG">
+                  </a>
               </div>
-            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-        <div class="box">
-          <a href="#" data-toggle="modal" data-target="#7">
-            <img src="assets/img/proyecto5.PNG">
-          </a>
-          <div class="modal fade" id="7" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                <div class="modal-body">
-                  <img src="assets/img/proyecto5.PNG">
-                </div>
-                  <div class="col-md-12 description">
-                    <h4>This is the seventh one on my Gallery</h4>
-                  </div>
+          <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+              <div class="box">                                                        
+                  <a title="rocas" class="link-gallery">
+                      <img class="img-gallery" src="assets/img/proyecto5.PNG">
+                  </a>
               </div>
-            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-        <div class="box">
-          <a href="#" data-toggle="modal" data-target="#8">
-            <img src="assets/img/proyecto6.PNG">
-          </a>
-          <div class="modal fade" id="8" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                <div class="modal-body">
-                  <img src="assets/img/proyecto6.PNG">
-                </div>
-                  <div class="col-md-12 description">
-                    <h4>This is the eighth one on my Gallery</h4>
-                  </div>
+          <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+              <div class="box">                            
+                  <a title="rocas" class="link-gallery">
+                      <img class="img-gallery" src="assets/img/proyecto6.PNG">
+                  </a>
               </div>
-            </div>
           </div>
-        </div>
+          </div>
       </div>
   </section>
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+  <!-- Boton para cerrar el modal -->
+  <span class="close">×</span>
+  <!-- Imagen a mostrar -->
+  <span class="zoom" id="img-zoom" style="position: relative; overflow: hidden;">            
+      <img class="modal-content" id="img01">
+  </span>
+  <!-- Descripcion de la imagen -->
+  <div id="caption">hola</div>
+  </div>
+</div>
 
 <!-- Mi Contacto -->
-<footer class="portfolio_contacto">
+<footer class="portfolio_contacto" id="portfolio_contacto">
     <div class="container">
       <h2>Hablemos!</h2>
       <div class="row mt-5">
@@ -217,6 +153,7 @@
     </div>
 </footer>
 
+<!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>-->
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
