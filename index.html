@@ -11,6 +11,7 @@
 
 <!--galeria fotos -->
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!--mi estilo -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
@@ -119,17 +120,16 @@
       </div>
   </section>
   <!-- Modal -->
-  <div id="myModal" class="modal">
-  <!-- Boton para cerrar el modal -->
-  <span class="close">×</span>
-  <!-- Imagen a mostrar -->
-  <span class="zoom" id="img-zoom" style="position: relative; overflow: hidden;">            
-      <img class="modal-content" id="img01">
-  </span>
-  <!-- Descripcion de la imagen -->
-  <div id="caption">hola</div>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      ...
+      </div>
+    </div>
   </div>
-</div>
+ 
 
 <!-- Mi Contacto -->
 <footer class="portfolio_contacto" id="portfolio_contacto">
